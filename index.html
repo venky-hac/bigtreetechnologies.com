@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revamping to Version 2.0</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Revamping to Version 2.0</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <div class="title">Revamping to Version 2.0</div>
-        <div class="rocket">🚀</div>
-        <div class="gear-icons">
-            <span class="gear">⚙️</span>
-            <span class="gear">⚙️</span>
-            <span class="gear">⚙️</span>
-        </div>
-        <div class="progress-bar">
-            <div class="progress"></div>
-        </div>
-        <p>Stay tuned! We are upgrading for a better experience.</p>
+  <button id="theme-toggle">Toggle Theme</button>
+  <div class="container">
+    <div class="title">Revamping to Version 2.0</div>
+    <div class="rocket">
+      <!-- Inline Rocket SVG -->
+      <svg width="60" height="60" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M48 4L28 24L20 44L40 36L60 16L48 4Z" fill="#FF6F00"/>
+        <path d="M16 48L20 44L24 52L16 48Z" fill="#FFA726"/>
+      </svg>
     </div>
-    <script src="script.js"></script>
+    <div class="gear-icons">
+      <!-- Inline Gear SVGs -->
+      <div class="gear">
+        <svg width="50" height="50" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="6" fill="#90CAF9"/>
+          <path d="M32 2V10M32 54V62M2 32H10M54 32H62M11 11L16 16M48 48L53 53M11 53L16 48M48 16L53 11" stroke="#90CAF9" stroke-width="4"/>
+        </svg>
+      </div>
+      <div class="gear">
+        <svg width="50" height="50" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="6" fill="#90CAF9"/>
+          <path d="M32 2V10M32 54V62M2 32H10M54 32H62M11 11L16 16M48 48L53 53M11 53L16 48M48 16L53 11" stroke="#90CAF9" stroke-width="4"/>
+        </svg>
+      </div>
+      <div class="gear">
+        <svg width="50" height="50" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="6" fill="#90CAF9"/>
+          <path d="M32 2V10M32 54V62M2 32H10M54 32H62M11 11L16 16M48 48L53 53M11 53L16 48M48 16L53 11" stroke="#90CAF9" stroke-width="4"/>
+        </svg>
+      </div>
+    </div>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+    <p id="countdown">Launching in: --:--:--:--</p>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
